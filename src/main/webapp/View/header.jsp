@@ -61,14 +61,16 @@
 
 
 
-
+        <%
+              String contex=request.getContextPath();
+          %>
     </style>
 </head>
 <body>
 
 <div class="header">
     <div class="header-left">
-        <a href="../index.jsp" class="logo"><img src="../immagini/Logo.png" width="100px" height="100px"></a>
+        <a href="<%=contex%>/index.jsp" class="logo"><img src="../immagini/Logo.png" width="100px" height="100px"></a>
     </div>
     <div class="header-right">
         <a class="button" href="/interface/profilo.jsp"> Login</a>
