@@ -30,13 +30,7 @@
         margin: auto;
         margin-top: 50px;
     }
-    body {
 
-        background-color: #424141;
-    }
-    p{
-        color:white;
-    }
     body {
 
         background-color:#F3EAEA ;

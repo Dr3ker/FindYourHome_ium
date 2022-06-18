@@ -82,7 +82,7 @@
     </div>
     <div class="header-right">
         <a class="button" href="/interface/profilo.jsp"> Login</a>
-
+        <button class="button" onclick="darkMode() ">dark mode</button>
     </div>
 
 
@@ -90,4 +90,9 @@
 
 </div>
 </body>
+<script>
+    function darkMode(){
+        document.body.style.backgroundColor="black"
+    }
+</script>
 </html>
