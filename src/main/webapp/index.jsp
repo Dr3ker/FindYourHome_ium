@@ -20,7 +20,7 @@
     }
     p{
         font-size: 28px;
-        color: black;
+
     }
     .content{
         display: flex;
@@ -33,7 +33,7 @@
     }
 
     body {
-
+        transition: ease-in 0.5s;
         background-color:#F3EAEA ;
     }
 
@@ -44,11 +44,11 @@
 </jsp:include>
 <div class="content">
     <a class=btn href="View/offriLetto.jsp" >Offri un Letto</a>
-    <p class="title">Offri un posto letto a chi ne ha più bisogno</p>
+    <p >Offri un posto letto a chi ne ha più bisogno</p>
 </div>
 <div class="content">
     <a class=btn href="" >Trova un letto</a>
-    <p class="title1">Cerca un posto letto più adatto a te</p>
+    <p >Cerca un posto letto più adatto a te</p>
 </div>
 </body>
 </html>

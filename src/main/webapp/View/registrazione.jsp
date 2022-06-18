@@ -51,12 +51,16 @@
             border: solid black;
             background-image: url("/img/flag-yellow.jpg");
             color: black;
+            text-decoration: none;
         }
         .center{
             margin-top: 30px;
             text-align: center;
         }
-
+        body {
+            transition: ease-in 0.5s;
+            background-color:#F3EAEA ;
+        }
     </style>
 </head>
 <body>

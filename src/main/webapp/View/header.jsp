@@ -33,12 +33,11 @@
             line-height: 25px;
         }
 
-        .header a.button{
+       a.button{
             padding: 10px 30px 10px 30px;
             border-radius: 20px;
             border: solid black;
             background-image: url("<%=contex%>/img/flag-giallo1.jpg");
-
             background-size: cover;
             color: black;
         }
@@ -50,23 +49,34 @@
         }
 
         .header-right {
-            margin-top: 40px;
-            flex: 33%;
+
+            flex: 16.5%;
             text-align: center;
-            margin-right: 50px;
+            margin:auto;
         }
 
         .header-left {
             flex: 33%;
             text-align: center;
             color: white;
+            margin:auto;
         }
 
+       .dark-mode{
+           transition: ease-in 0.5s;
+           transition: ease-out 0.5s;
+           background-color: #424141;
+            color:white;
+       }
+        .titolo{
+            font-size: 40px;
+        }
+.btn1{
 
-
-
-
-
+    border-radius: 20px;
+    border: solid black;
+    cursor: pointer;
+}
 
 
     </style>
@@ -75,51 +85,29 @@
 
 <div class="header">
     <div class="header-left">
-        <a href="<%=contex%>/index.jsp" class="logo"><img src="<%=contex%>/img/logo1.jpg" width="200px" height="100px"></a>
+        <a href="<%=contex%>/index.jsp" class="logo" ><img src="<%=contex%>/img/logo1.jpg" width="200px" height="100px"></a>
     </div>
     <div class="header-left" >
-        <p><h1>FIND YOUR HOME</h1></p>
+        <p class="titolo">FIND YOUR HOME</p>
     </div>
     <div class="header-right">
         <a class="button" href="<%=contex%>/View/login.jsp"> Login</a>
-        <button class="button" onclick="darkMode() ">dark mode</button>
-    </div>
 
+    </div>
+    <div class="header-right">
+        <button class="btn1"  onclick="darkMode() "><img src="<%=contex%>/img/luna.png" width="35px" height="35px"></button>
+    </div>
 
 
 
 </div>
 </body>
 <script>
-    var check=false;
-    const title = document.querySelector(".title");
-    const title1 = document.querySelector(".title1");
-
-    function darkMode(){
-
-            if(check==false) {
-
-                document.body.style.backgroundColor = "#424141"
-                title.style.color = "white";
-                title1.style.color = "white";
-                check=true;
-            }
-            else{
-                    document.body.style.backgroundColor = "#F3EAEA"
-                    title.style.color = "black";
-                    title1.style.color = "black";
-                    check=false;
-                }
-
-
-
-
-
-
-
-
-
-
-    }
+    var content = document.body;
+    var label= document.querySelector("title");
+    var label1= document.querySelector("title1");
+       function darkMode() {
+           content.classList.toggle("dark-mode");
+       }
 </script>
 </html>

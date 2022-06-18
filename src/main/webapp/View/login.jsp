@@ -22,12 +22,20 @@
             padding:40px 0px 40px 0px;
 
         }
+        .cont1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 33%;
+            margin: auto;
+            padding: 20px;
+        }
         .cont{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            border: 1px solid black;
-            border-radius: 20px;
             width: 33%;
             margin: auto;
             padding: 20px;
@@ -37,6 +45,7 @@
             display: flex;
             flex-direction: column;
             text-align: left;
+            margin-right: 10px;
         }
         .item2{
             display: flex;
@@ -53,12 +62,22 @@
             border: solid black;
             background-image: url("/img/flag-yellow.jpg");
             color: black;
+            text-decoration: none;
+            margin:auto;
         }
         .center{
-            margin-top: 30px;
-            text-align: center;
+            display: flex;
+            margin: auto;
+            width: 33%;
+            margin-top: 20px;
         }
-
+        .center *{
+          margin:auto;
+        }
+        body {
+            transition: ease-in 0.5s;
+            background-color:#F3EAEA ;
+        }
     </style>
 </head>
 <body>
@@ -66,6 +85,7 @@
     <jsp:param name="title" value=""/>
 </jsp:include>
 <p class="title">Login</p>
+<div class="cont1">
 <div class="cont">
     <div class="item1">
         <p>Email</p>
@@ -77,9 +97,11 @@
         <input type="text" placeholder="Inserisci Email">
         <input type="text" placeholder="Inserisci password">
 
-        <a class=btn href="">Login</a>
+
     </div>
 
+    </div>
+    <a class=btn href="">Login</a>
 </div>
 <div class="center">
     <p>Non hai un account?</p>

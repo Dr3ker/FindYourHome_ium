@@ -55,7 +55,10 @@
             margin-top: 30px;
             text-align: center;
         }
-
+        body {
+            transition: ease-in 0.5s;
+            background-color:#F3EAEA ;
+        }
     </style>
 </head>
 <body>
