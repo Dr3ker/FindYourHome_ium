@@ -1,14 +1,14 @@
 <%--
   Created by IntelliJ IDEA.
-  User: raffaele
+  User: Antonio
   Date: 18/06/2022
-  Time: 17:50
+  Time: 17:44
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Registrazione</title>
+    <title> Login </title>
     <style>
         .title{
             font-size: 38px;
@@ -34,7 +34,6 @@
             display: flex;
             flex-direction: column;
             text-align: left;
-            margin-right: 20px;
         }
         .item2{
             display: flex;
@@ -60,30 +59,33 @@
     </style>
 </head>
 <body>
-<jsp:include page="/View/registrazione.jsp">
+<jsp:include page="/View/header.jsp">
     <jsp:param name="title" value=""/>
 </jsp:include>
-<p class="title">Registrazione</p>
+<p class="title">Login</p>
 <div class="cont">
     <div class="item1">
-        <p>E-Mail</p>
-        <p>Username</p>
+        <p>Email</p>
         <p>Password</p>
-        <p>Conferma</p>
+
 
     </div>
     <div class="item2">
-        <input type="text" placeholder="Inserisci E-Mail">
-        <input type="text" placeholder="Inserisci Username">
-        <input type="text" placeholder="Inserisci Password">
-        <input type="text" placeholder="Conferma Password">
+        <input type="text" placeholder="Inserisci Email">
+        <input type="text" placeholder="Inserisci password">
 
+        <a class=btn href="">Login</a>
     </div>
 
 </div>
 <div class="center">
-    <a class=btn href="">Registrati</a>
+    <p>Non hai un account?</p>
+    <a class="btn" href="">Registrati</a>
 </div>
+
+
+
+
 
 </body>
 </html>
