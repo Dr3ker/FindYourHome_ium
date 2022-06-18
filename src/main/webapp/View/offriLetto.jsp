@@ -48,7 +48,7 @@
             padding: 10px 30px 10px 30px;
             border-radius: 20px;
             border: solid black;
-            background-image: url("/img/flag-giallo.jpg");
+            background-image: url("/img/flag-yellow.jpg");
             color: black;
         }
         .center{
