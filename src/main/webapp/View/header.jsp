@@ -91,8 +91,35 @@
 </div>
 </body>
 <script>
+    var check=false;
+    const title = document.querySelector(".title");
+    const title1 = document.querySelector(".title1");
+
     function darkMode(){
-        document.body.style.backgroundColor="black"
+
+            if(check==false) {
+
+                document.body.style.backgroundColor = "#424141"
+                title.style.color = "white";
+                title1.style.color = "white";
+                check=true;
+            }
+            else{
+                    document.body.style.backgroundColor = "#F3EAEA"
+                    title.style.color = "black";
+                    title1.style.color = "black";
+                    check=false;
+                }
+
+
+
+
+
+
+
+
+
+
     }
 </script>
 </html>
