@@ -8,12 +8,13 @@
     <%
             String contex=request.getContextPath();
         %>
+
     .btn{
         font-size:38px;
         color: black;
         border-color: yellow;
         padding: 20px;
-        background-image: url("<%=contex%>/img/flag-giallo.jpg");
+        background-image: url("<%=contex%>/img/flag-giallo1.jpg");
         background-size: cover;
     }
     p{
@@ -25,12 +26,23 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        width: 80%;
+        width: 60%;
         margin: auto;
         margin-top: 50px;
     }
-    body{
-        background-color: #F3EAEA;
+    body {
+
+        background-color: #424141;
+    }
+    p{
+        color:white;
+    }
+    body {
+
+        background-color:#F3EAEA ;
+    }
+    p{
+        color:black;
     }
 </style>
 <body>

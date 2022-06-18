@@ -37,7 +37,7 @@
             padding: 10px 30px 10px 30px;
             border-radius: 20px;
             border: solid black;
-            background-image: url("<%=contex%>/img/flag-giallo.jpg");
+            background-image: url("<%=contex%>/img/flag-giallo1.jpg");
 
             background-size: cover;
             color: black;
@@ -51,14 +51,15 @@
 
         .header-right {
             margin-top: 40px;
-            flex: 50%;
+            flex: 33%;
             text-align: center;
             margin-right: 50px;
         }
 
         .header-left {
-            flex: 50%;
+            flex: 33%;
             text-align: center;
+            color: white;
         }
 
 
@@ -74,10 +75,14 @@
 
 <div class="header">
     <div class="header-left">
-        <a href="<%=contex%>/index.jsp" class="logo"><img src="<%=contex%>/img/logo.jpg" width="100px" height="100px"></a>
+        <a href="<%=contex%>/index.jsp" class="logo"><img src="<%=contex%>/img/logo1.jpg" width="200px" height="100px"></a>
+    </div>
+    <div class="header-left" >
+        <p><h1>FIND YOUR HOME</h1></p>
     </div>
     <div class="header-right">
         <a class="button" href="/interface/profilo.jsp"> Login</a>
+
     </div>
 
 
