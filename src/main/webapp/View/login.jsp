@@ -10,6 +10,9 @@
 <head>
     <title> Login </title>
     <style>
+        <%
+            String contex=request.getContextPath();
+        %>
         .title{
             font-size: 38px;
             margin:auto;
@@ -80,7 +83,7 @@
 </div>
 <div class="center">
     <p>Non hai un account?</p>
-    <a class="btn" href="">Registrati</a>
+    <a class="btn" href="<%=contex%>/View/registrazione.jsp">Registrati</a>
 </div>
 
 
