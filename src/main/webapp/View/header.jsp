@@ -81,7 +81,7 @@
         <p><h1>FIND YOUR HOME</h1></p>
     </div>
     <div class="header-right">
-        <a class="button" href="/interface/profilo.jsp"> Login</a>
+        <a class="button" href="<%=contex%>/View/login.jsp"> Login</a>
 
     </div>
 
