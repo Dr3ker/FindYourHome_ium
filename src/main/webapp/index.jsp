@@ -5,12 +5,16 @@
     <title>JSP - Hello World</title>
 </head>
 <style>
+    <%
+            String contex=request.getContextPath();
+        %>
     .btn{
         font-size:38px;
         color: black;
         border-color: yellow;
         padding: 20px;
-        background-image: url("/img/flag-giallo.jpg");
+        background-image: url("<%=contex%>/img/flag-giallo.jpg");
+        background-size: cover;
     }
     p{
         font-size: 28px;

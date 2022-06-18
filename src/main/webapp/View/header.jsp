@@ -10,12 +10,17 @@
 <head>
     <title>Header</title>
     <style>
+        <%
+            String contex=request.getContextPath();
+        %>
         .header {
 
             padding: 20px 10px;
             display: flex;
             border-bottom: 1px solid;
-            background-image: url("/img/flag-header.jpg");
+            background-image: url("<%=contex%>/img/flag-blu.jpg");
+            background-size: cover;
+            background-position: center;
         }
 
 
@@ -32,8 +37,9 @@
             padding: 10px 30px 10px 30px;
             border-radius: 20px;
             border: solid black;
-            background-image: url("/img/flag-giallo.jpg");
+            background-image: url("<%=contex%>/img/flag-giallo.jpg");
 
+            background-size: cover;
             color: black;
         }
 
@@ -61,16 +67,14 @@
 
 
 
-        <%
-              String contex=request.getContextPath();
-          %>
+
     </style>
 </head>
 <body>
 
 <div class="header">
     <div class="header-left">
-        <a href="<%=contex%>/index.jsp" class="logo"><img src="../immagini/Logo.png" width="100px" height="100px"></a>
+        <a href="<%=contex%>/index.jsp" class="logo"><img src="<%=contex%>/img/logo.jpg" width="100px" height="100px"></a>
     </div>
     <div class="header-right">
         <a class="button" href="/interface/profilo.jsp"> Login</a>
