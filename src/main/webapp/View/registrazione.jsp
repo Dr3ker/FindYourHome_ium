@@ -70,7 +70,7 @@
     </style>
 </head>
 <body>
-<jsp:include page="/View/headerLog.jsp">
+<jsp:include page="/View/header.jsp">
     <jsp:param name="title" value=""/>
 </jsp:include>
 <p class="title">Registrazione</p>

@@ -86,7 +86,14 @@
     </div>
 </div>
 <div class="cont">
-<a class="btn" href="" > Prenota</a>
+<a class="btn" href="<%=contex%>/View/home2.jsp" onclick="myFunction()" > Prenota</a>
 </div>
+
+
+<script>
+    function myFunction() {
+        alert("Prenotazione effettuata con successo!");
+    }
+</script>
 </body>
 </html>

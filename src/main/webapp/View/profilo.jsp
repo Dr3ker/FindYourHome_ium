@@ -17,21 +17,52 @@
             transition: ease-in 0.5s;
             background-color:#F3EAEA ;
         }
-        .cont{
+        .cont_bot{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            padding: 20px;
+            border-bottom: 1px black solid ;
+            align-content: center;
+            align-items: center;
+        }
+        .cont_bot *{
+            margin: 15px;
+        }
+
+        .container{
+            border-radius: 20px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             margin: auto;
             padding: 20px;
-            border-bottom: 1px black solid ;
+            border: 1px solid black;
+            background-color: grey;
+            width: 80%;
+            margin-top: 30px;
         }
-        .cont *{
-            margin: 15px;
-        }
-        .search{
-            height: 40px;
-            width: 450px;
+        .item{
             border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            width: 80%;
+            padding: 20px;
+
+        }
+    .title{
+        font-style: italic;
+        font-size: 25px;
+    }
+        p{
+            font-size: 20px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
         }
     </style>
 </head>
@@ -39,30 +70,40 @@
 <jsp:include page="/View/headerLogout.jsp">
     <jsp:param name="title" value=""/>
 </jsp:include>
-<p>Benvenuta Alina</p>
-<div class="cont">
-</div>
-<div class="cont1">
-    <p> PRENOTAZIONI EFFETTUATE</p>
-    <div class="item">
-        <p>Casa rossi:</p>
-        <p>Stato :</p>
-    </div>
-    <div class="item">
-        <p> </p>
-        <p>Accettato/In Attesa/Rifiutato</p>
-    </div>
 
-    <div class="cont2">
-        <p> POSTI LETTO OFFERTI</p>
+<div class="cont_bot">
+    <p class="title">Benvenuta Alina</p>
+</div>
+<div class="cont_bot">
+    <p class="title"> PRENOTAZIONI EFFETTUATE</p>
+    <div class="container">
         <div class="item">
-            <p>Casa rossi:</p>
-            <p>Stato :</p>
+            <p class="left">Casa rossi:</p>
+            <p>Stato : Accettato</p>
         </div>
+        <a class="right" href="<%=contex%>/View/visualizzaCasa.jsp"><img src="<%=contex%>/img/casa1.jpg" width="300px" height="200px"></a>
+
+    </div>
+</div>
+<div class="cont_bot">
+    <p class="title">POSTI LETTO OFFERTI</p>
+    <div class="container">
         <div class="item">
-            <p> </p>
-            <p>Accettato/In Attesa/Rifiutato</p>
+            <p class="left">Casa rossi:</p>
+            <p>Posti : 1/2 </p>
+            <div class="row">
+                <p>email : alina.uk@gmail.com</p>
+                <a class="right" href=""><img src="<%=contex%>/img/spunta.jpg" width="30px" height="30px"></a>
+                <a class="right" href=""><img src="<%=contex%>/img/X.jpg" width="30px" height="30px"></a>
+            </div>
+            <div class="row">
+                <p>email : alina.uk@gmail.com</p>
+                <a class="right" href=""><img src="<%=contex%>/img/spunta.jpg" width="30px" height="30px"></a>
+                <a class="right" href=""><img src="<%=contex%>/img/X.jpg" width="30px" height="30px"></a>
+            </div>
         </div>
+        <a class="right" href="<%=contex%>/View/visualizzaCasa.jsp"><img src="<%=contex%>/img/casa1.jpg" width="300px" height="200px"></a>
+    </div>
 </div>
 </body>
 </html>
