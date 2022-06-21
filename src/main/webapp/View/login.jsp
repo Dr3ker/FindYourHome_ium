@@ -65,6 +65,10 @@
             text-decoration: none;
             margin:auto;
         }
+        .btn:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
         .center{
             display: flex;
             margin: auto;
@@ -101,7 +105,7 @@
     </div>
 
     </div>
-    <a class=btn href="<%=contex%>/View/headerLog.jsp">Login</a>
+    <a class=btn href="<%=contex%>/View/home2.jsp">Login</a>
 </div>
 <div class="center">
     <p>Non hai un account?</p>

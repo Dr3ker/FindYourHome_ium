@@ -50,6 +50,10 @@
             border: solid black;
             background-image: url("/img/flag-yellow.jpg");
             color: black;
+            text-decoration: none;
+        }
+        .btn:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         }
         .center{
             margin-top: 30px;
@@ -59,6 +63,9 @@
             transition: ease-in 0.5s;
             background-color:#F3EAEA ;
         }
+        <%
+       String contex=request.getContextPath();
+   %>
     </style>
 </head>
 <body>
@@ -86,8 +93,13 @@
 
     </div>
     <div class="center">
-        <a class=btn href="">Invia</a>
+        <a class=btn href="<%=contex%>/View/home2.jsp" onclick="myFunction()">Invia</a>
     </div>
 
+<script>
+    function myFunction() {
+        alert("Operazione effettuata con successo!");
+    }
+</script>
 </body>
 </html>

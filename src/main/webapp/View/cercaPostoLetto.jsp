@@ -17,13 +17,30 @@
           transition: ease-in 0.5s;
           background-color:#F3EAEA ;
       }
-
-
+      .cont{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: auto;
+          padding: 20px;
+          border-bottom: 1px black solid ;
+      }
+      .cont *{
+          margin: 15px;
+      }
+      .search{
+          height: 40px;
+          width: 450px;
+          border-radius: 20px;
+      }
   </style>
 </head>
 <body>
-<div>
-    <input type="text" placeholder="Search.." width="200px" height="40px">
+<jsp:include page="/View/headerLog.jsp">
+    <jsp:param name="title" value=""/>
+</jsp:include>
+<div class="cont">
+    <input class="search" type="text" placeholder="Search.." width="200px" height="40px">
     <img src="<%=contex%>/img/lente.jpg" width="40px" height="40px">
     <img src="<%=contex%>/img/cestino.jpg" width="40px" height="40px">
 </div>

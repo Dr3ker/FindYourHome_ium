@@ -39,15 +39,15 @@
 
 </style>
 <body>
-<jsp:include page="/View/header.jsp">
+<jsp:include page="/View/headerLog.jsp">
     <jsp:param name="title" value=""/>
 </jsp:include>
 <div class="content">
-    <a class=btn href="<%=contex%>/View/login.jsp" >Offri un Letto</a>
+    <a class=btn href="<%=contex%>/View/offriLetto.jsp" >Offri un Letto</a>
     <p >Offri un posto letto a chi ne ha più bisogno</p>
 </div>
 <div class="content">
-    <a class=btn href="<%=contex%>/View/login.jsp" >Trova un letto</a>
+    <a class=btn href="<%=contex%>/View/cercaPostoLetto.jsp" >Trova un letto</a>
     <p >Cerca un posto letto più adatto a te</p>
 </div>
 </body>
