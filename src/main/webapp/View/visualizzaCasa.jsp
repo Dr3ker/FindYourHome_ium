@@ -54,7 +54,7 @@
 </head>
 <body>
 
-<jsp:include page="/View/header.jsp">
+<jsp:include page="/View/headerLog.jsp">
     <jsp:param name="title" value=""/>
 </jsp:include>
     <div class="cont">

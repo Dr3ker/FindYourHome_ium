@@ -62,7 +62,7 @@
     </style>
 </head>
 <body>
-<jsp:include page="/View/header.jsp">
+<jsp:include page="/View/headerLog.jsp">
     <jsp:param name="title" value=""/>
 </jsp:include>
     <p class="title">Inserisci i tuoi dati</p>
