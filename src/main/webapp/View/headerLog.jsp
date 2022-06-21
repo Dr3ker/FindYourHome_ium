@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: marco
+  User: marco - Antonio
   Date: 09/06/2022
   Time: 12:12
   To change this template use File | Settings | File Templates.
@@ -10,12 +10,17 @@
 <head>
     <title>Header</title>
     <style>
+        <%
+            String contex=request.getContextPath();
+        %>
         .header {
 
             padding: 20px 10px;
             display: flex;
             border-bottom: 1px solid;
-            background: linear-gradient(0deg, rgba(0,0,140,1) 0%, rgba(0,0,255,1) 97%, rgba(255,255,255,1) 100%);
+            background-image: url("<%=contex%>/img/flag-blu.jpg");
+            background-size: cover;
+            background-position: center;
         }
 
 
@@ -28,11 +33,12 @@
             line-height: 25px;
         }
 
-        .header a.button{
+        a.button{
             padding: 10px 30px 10px 30px;
             border-radius: 20px;
             border: solid black;
-            background: yellow;
+            background-image: url("<%=contex%>/img/flag-giallo1.jpg");
+            background-size: cover;
             color: black;
         }
 
@@ -43,39 +49,65 @@
         }
 
         .header-right {
-            margin-top: 40px;
-            flex: 50%;
+
+            flex: 16.5%;
             text-align: center;
-            margin-right: 50px;
+            margin:auto;
         }
 
         .header-left {
-            flex: 50%;
+            flex: 33%;
             text-align: center;
+            color: white;
+            margin:auto;
+        }
+
+        .dark-mode{
+            transition: ease-in 0.5s;
+            transition: ease-out 0.5s;
+            background-color: #424141;
+            color:white;
+        }
+        .titolo{
+            font-size: 40px;
+        }
+        .btn1{
+
+            border-radius: 20px;
+            border: solid black;
+            cursor: pointer;
         }
 
 
-
-
-
-
-
-        
     </style>
 </head>
 <body>
 
 <div class="header">
     <div class="header-left">
-        <a href="../index.jsp" class="logo"><img src="/immagini/Logo.png" width="100px" height="100px"></a>
+        <a href="<%=contex%>/index.jsp" class="logo" ><img src="<%=contex%>/img/logo1.jpg" width="200px" height="100px"></a>
+    </div>
+    <div class="header-left" >
+        <p class="titolo">FIND YOUR HOME</p>
     </div>
     <div class="header-right">
-        <a class="button" href="/interface/profilo.jsp"> *Nome*</a>
-    </div>
+        <a class="button" href="<%=contex%>/View/login.jsp"> Alina</a>
 
+    </div>
+    <div class="header-right">
+        <button class="btn1"  onclick="darkMode() "><img src="<%=contex%>/img/luna.png" width="35px" height="35px"></button>
+    </div>
 
 
 
 </div>
 </body>
+<script>
+    var content = document.body;
+    var label= document.querySelector("title");
+    var label1= document.querySelector("title1");
+    function darkMode() {
+        content.classList.toggle("dark-mode");
+    }
+</script>
 </html>

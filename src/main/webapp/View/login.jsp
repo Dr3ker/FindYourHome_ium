@@ -101,7 +101,7 @@
     </div>
 
     </div>
-    <a class=btn href="">Login</a>
+    <a class=btn href="<%=contex%>/View/headerLog.jsp">Login</a>
 </div>
 <div class="center">
     <p>Non hai un account?</p>
