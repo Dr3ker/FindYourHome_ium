@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: marco - Antonio
-  Date: 09/06/2022
-  Time: 12:12
+  User: Antonio
+  Date: 21/06/2022
+  Time: 18:10
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -91,7 +91,7 @@
         <p class="titolo">FIND YOUR HOME</p>
     </div>
     <div class="header-right">
-        <a class="button" href="<%=contex%>/View/profilo.jsp"> Alina</a>
+        <a class="button" href="<%=contex%>/index.jsp"> Logout </a>
 
     </div>
     <div class="header-right">
