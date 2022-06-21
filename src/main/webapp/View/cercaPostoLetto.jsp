@@ -78,26 +78,26 @@
 </div>
 <div class="cont1">
     <div class="item1">
-        <a href="<%=contex%>/View/visualizzaCasa.jsp"> Casa Rossi</a>
+        <a href="<%=contex%>/View/visualizzaCasa1.jsp"> Casa Verdi</a>
     </div>
     <div class="item1">
-        <a href="<%=contex%>/View/visualizzaCasa.jsp"><img src="<%=contex%>/img/casa1.jpg" width="200px" height="130px"></a>
-    </div>
-</div>
-<div class="cont1">
-    <div class="item1">
-        <a href="<%=contex%>/View/visualizzaCasa.jsp"> Casa Rossi</a>
-    </div>
-    <div class="item1">
-        <a href="<%=contex%>/View/visualizzaCasa.jsp"><img src="<%=contex%>/img/casa1.jpg" width="200px" height="130px"></a>
+        <a href="<%=contex%>/View/visualizzaCasa1.jsp"><img src="<%=contex%>/img/casa2.jpg" width="200px" height="130px"></a>
     </div>
 </div>
 <div class="cont1">
     <div class="item1">
-        <a href="<%=contex%>/View/visualizzaCasa.jsp"> Casa Rossi</a>
+        <a href="<%=contex%>/View/visualizzaCasa2.jsp"> Casa Margarita</a>
     </div>
     <div class="item1">
-        <a href="<%=contex%>/View/visualizzaCasa.jsp"><img src="<%=contex%>/img/casa1.jpg" width="200px" height="130px"></a>
+        <a href="<%=contex%>/View/visualizzaCasa2.jsp"><img src="<%=contex%>/img/casa3.jpg" width="200px" height="130px"></a>
+    </div>
+</div>
+<div class="cont1">
+    <div class="item1">
+        <a href="<%=contex%>/View/visualizzaCasa3.jsp"> Casa Letizia</a>
+    </div>
+    <div class="item1">
+        <a href="<%=contex%>/View/visualizzaCasa3.jsp"><img src="<%=contex%>/img/casa4.jpg" width="200px" height="130px"></a>
     </div>
 </div>
 </body>
