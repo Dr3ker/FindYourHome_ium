@@ -96,11 +96,6 @@
                 <a class="right" href=""><img src="<%=contex%>/img/spunta.jpg" width="30px" height="30px"></a>
                 <a class="right" href=""><img src="<%=contex%>/img/X.jpg" width="30px" height="30px"></a>
             </div>
-            <div class="row">
-                <p>email : alina.uk@gmail.com</p>
-                <a class="right" href=""><img src="<%=contex%>/img/spunta.jpg" width="30px" height="30px"></a>
-                <a class="right" href=""><img src="<%=contex%>/img/X.jpg" width="30px" height="30px"></a>
-            </div>
         </div>
         <a class="right" href="<%=contex%>/View/visualizzaCasa.jsp"><img src="<%=contex%>/img/casa1.jpg" width="300px" height="200px"></a>
     </div>
